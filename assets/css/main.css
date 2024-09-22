@@ -1,0 +1,91 @@
+@import './base.css';
+
+body{
+    font-family: var(--mainFont);
+}
+
+.menu{
+    display:none;
+}
+
+.header{
+    background-color: rgb(252, 250, 249);
+    padding:20px 0;
+}
+
+.header .logo{
+    display: flex;
+    align-items: center;
+    gap:8px;
+}
+
+.header .logo img{
+    width:40px;
+}
+.header .logo a{
+    color:var(--mainColor);
+}
+
+
+.header .navbar ul{
+    display:flex;
+    gap:16px;
+    align-content: center;  
+}
+.header .navbar ul li a{
+    color:#101928;
+}
+.header .navbar ul li .home{
+    font-weight: 900;
+}
+
+.header .auth{
+    display: flex;
+    gap:20px;
+    align-items: center;
+}
+.header .auth a{
+    font-family: var(--subFont);
+    border-radius:10px;
+
+}
+
+.header .auth .login{
+    border: 2px solid var(--mainColor);
+    padding: 5.3px 40px;
+    color:var(--mainColor);
+    font-weight: 700;
+}
+
+.header .auth .register{
+    border: 2px solid var(--mainColor);
+    padding: 5.3px 30px;
+    color:white;
+    font-weight:500;
+    background-color: var(--mainColor);
+
+}
+
+@media screen and (max-width:617px){
+    .header .auth{
+        display:none;
+    }
+}
+
+@media screen and (max-width:992px){
+    .navbar{
+        display:none;
+    }
+    .menu{
+        display: block;
+        order:2;
+    }
+
+}
+
+@media screen and (max-width:576px){
+    .container{
+        width: calc(100% - 30px);
+    }
+
+}
